@@ -1,7 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
 name: testNAME
-
+env: 
+  NAME: "jsjsjsjsjssjjs"
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
@@ -35,3 +36,6 @@ jobs:
     steps: 
      - name: test2
        run: echo "test2"
+       
+     - name: test3
+       echo: "==================${{env.NAME}}"
