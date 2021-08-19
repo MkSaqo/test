@@ -38,4 +38,4 @@ jobs:
        run: echo "test2"
        
      - name: test3
-       echo: "==================${{env.NAME}}"
+       run: echo "==================${{env.NAME}}"
