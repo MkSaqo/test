@@ -31,6 +31,7 @@ jobs:
           echo test, and deploy your project.
   teat2:
     runs-on: ubuntu-latest
+    needs: [test1]
     steps: 
      - name: test2
        run: echo "test2"
